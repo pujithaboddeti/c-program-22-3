@@ -1,0 +1,53 @@
+//write a program to perform arithmetic operations like addition , subscription,
+//multiplication,division using functions
+#include<stdio.h>
+int add(int x,int y);
+int sub(int x,int y);
+int mul(int x,int y);
+int div(int x,int y);
+int mod(int x,int y);
+int main()
+{
+    int a,b,c,d,e,f,g;
+    scanf("%d %d",&a,&b);
+    c=add(a,b);
+    d=sub(a,b);
+    e=mul(a,b);
+    f=div(a,b);
+    g=mod(a,b);
+    printf("\naddition:%d",c);
+    printf("\ndifference:%d ",d);
+    printf("\nmul:%d",e);
+    printf("\ndiv:%d",f);
+    printf("\nmod:%d",g);
+}
+int add(int x,int y)
+{
+    int a;
+    a=x+y;
+    return a;
+}
+int sub(int x,int y)
+{
+    int a;
+    a=x-y;
+    return a;
+}
+int mul(int x,int y)
+{
+    int a;
+    a=x*y;
+    return a;
+}
+int div(int x,int y)
+{
+    int a;
+    a=x%y;
+    return a;
+}
+int mod(int x,int y)
+{
+    int a;
+    a=x/y;
+    return a;
+}
