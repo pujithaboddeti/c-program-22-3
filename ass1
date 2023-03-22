@@ -1,0 +1,22 @@
+//Write a program to print biggest of three numbers using call by value passing technique
+#include<stdio.h>
+int bignum(int x,int y,int z);
+int main()
+{
+	int x,y,z;
+	scanf("%d %d %d",&x,&y,&z);
+	bignum(x,y,z);
+	return 0;
+}
+int bignum(int x,int y,int z)
+{
+	if(x>y&&x>z)
+	printf("x is big");
+	else
+	{
+		if(y>z)
+		printf("y is big");
+		else
+		printf("z is big");
+	}
+}
